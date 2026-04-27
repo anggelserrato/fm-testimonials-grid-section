@@ -8,7 +8,7 @@ import bgPatternQuotation from '../assets/bg-pattern-quotation.svg';
 function TestimonialsSection() {
   return (
     <main>
-      <section className="mx-auto my-[70px] flex max-w-[311px] flex-col items-center justify-center gap-card-400 md:grid md:max-w-[647px] md:grid-cols-2 md:items-stretch xl:my-card-1600 xl:max-w-[1114px] xl:grid-cols-4 xl:gap-x-card-400 xl:gap-y-card-300">
+      <section className="mx-auto my-[70px] flex max-w-[311px] flex-col items-center justify-center gap-card-400 md:grid md:max-w-[647px] md:grid-cols-2 md:items-stretch xl:my-card-2800 xl:max-w-[1114px] xl:grid-cols-4 xl:gap-x-card-400 xl:gap-y-card-300">
         <article className="relative flex flex-col gap-card-200 rounded-lg bg-card-Purple-500 p-card-400 shadow-card md:col-span-2 md:col-start-1 md:row-start-1">
           <img
             src={bgPatternQuotation}
