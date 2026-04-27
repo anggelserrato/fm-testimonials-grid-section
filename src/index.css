@@ -2,15 +2,17 @@
 
 @theme {
   --color-card-Purple-50: hsl(260, 100%, 95%);
+  --color-card-Purple-500: hsl(263, 55%, 52%);
   --color-card-Purple-300: hsl(264, 82%, 80%);
   --color-card-White: hsl(0, 0%, 100%);
-  --color-card-Grey-: 100: hsl(214, 17%, 92%);
-  --color-card-Grey-: 200: hsl(0, 0%, 81%);
-  --color-card-Grey-: 400: hsl(224, 10%, 45%);
-  --color-card-Grey-: 500: hsl(217, 19%, 35%);
+  --color-card-white-smoke: hsl(300, 5%, 96%);
+  --color-card-Grey-100: hsl(214, 17%, 92%);
+  --color-card-Grey-200: hsl(0, 0%, 81%);
+  --color-card-Grey-400: hsl(224, 10%, 45%);
+  --color-card-Grey-500: hsl(217, 19%, 35%);
   --color-card-Dark-blue: hsl(219, 29%, 14%);
-  --color-card-Black-: hsl(0, 0%, 7%);
-  --font-card-Barlow-Semi-Condensed:
+  --color-card-Black: hsl(0, 0%, 7%);
+  --font-Barlow-Semi-Condensed:
     'Barlow Semi Condensed', ui-sans-serif, system-ui, sans-serif;
   --spacing-card-50: 4px;
   --spacing-card-100: 8px;
@@ -18,34 +20,23 @@
   --spacing-card-300: 24px;
   --spacing-card-400: 32px;
   --spacing-card-500: 40px;
+  --spacing-card-1600: 128px;
+  --shadow-card: 40px 60px 50px 0px rgba(72, 85, 106, 0.25);
 }
 
 @layer base {
   body {
-    font-family: var(--font-card-Barlow-Semi-Condensed);
-    background-color: var(--color-card-Purple-50);
+    font-family: var(--font-Barlow-Semi-Condensed);
+    background-color: var(--color-card-white-smoke);
   }
 }
-
-/*
-font-thin                 font-weight: 100;
-font-extralight           font-weight: 200;
-font-light                font-weight: 300;
-font-normal               font-weight: 400;
-font-medium               font-weight: 500;
-font-semibold             font-weight: 600;
-font-bold                 font-weight: 700;
-font-extrabold            font-weight: 800;
-font-black                font-weight: 900;
-font-(<custom-property>)  font-weight: var(<custom-property>);
-font-[<value>]            font-weight: <value>;
-*/
 
 @utility text-preset-1 {
   font-weight: 600;
   font-size: 20px;
   line-height: 120%;
   letter-spacing: 0px;
+  align-self: stretch;
 }
 
 @utility text-preset-2 {
