@@ -9,11 +9,11 @@ function App() {
   return (
     <main>
       <section className="grid grid-cols-1 gap-card-400 px-card-200 py-card-400 md:grid-cols-2 md:grid-rows-[auto_auto_auto_auto] md:gap-y-card-400 md:px-card-600 md:py-card-1600 xl:grid-cols-4 xl:grid-rows-[auto_auto] xl:gap-x-card-400 xl:gap-y-card-300 xl:px-40 xl:py-card-2800">
-        <article className="flex flex-col gap-card-200 rounded-lg bg-card-Purple-500 p-card-400 shadow-2xl md:col-span-2 xl:col-span-2 xl:col-start-1 xl:row-start-1">
+        <article className="relative flex flex-col gap-card-200 rounded-lg bg-card-Purple-500 p-card-400 shadow-card md:col-span-2 xl:col-span-2 xl:col-start-1 xl:row-start-1 overflow-hidden">
           <img
             src={bgPatternQuotation}
             alt="Background quotation mark pattern"
-            className="absolute top-0 left-[375px] z-0 hidden md:block"
+            className="absolute top-0 left-[375px] hidden md:block"
           />
           <header className="flex flex-row items-center gap-[17px]">
             <figure className="flex h-7 w-7 items-center justify-center overflow-hidden rounded-full border-2 border-card-Purple-300">
@@ -26,7 +26,7 @@ function App() {
               </p>
             </div>
           </header>
-          <p className="text-preset-1 text-card-White">
+          <p className="text-preset-1 text-card-White relative z-10">
             I received a job offer mid-course, and the subjects I learned were
             current, if not more so, in the company I joined. I honestly feel I
             got every penny’s worth.
@@ -42,7 +42,7 @@ function App() {
           </blockquote>
         </article>
 
-        <article className="flex flex-col gap-card-200 rounded-lg bg-card-Grey-500 p-card-400 shadow-2xl md:row-start-2 xl:col-start-3 xl:row-start-1">
+        <article className="z-10 flex flex-col gap-card-200 rounded-lg bg-card-Grey-500 p-card-400 shadow-card md:row-start-2 xl:col-start-3 xl:row-start-1">
           <header className="flex flex-row items-center gap-[17px]">
             <figure className="flex h-7 w-7 items-center justify-center overflow-hidden rounded-full">
               <img src={imageJonathan} alt="Jonathan's picture" />
@@ -64,7 +64,7 @@ function App() {
           </blockquote>
         </article>
 
-        <article className="flex flex-col gap-card-200 rounded-lg bg-card-White p-card-400 shadow-2xl xl:col-start-1 xl:row-start-2">
+        <article className="z-10 flex flex-col gap-card-200 rounded-lg bg-card-White p-card-400 shadow-card xl:col-start-1 xl:row-start-2">
           <header className="flex flex-row items-center gap-[17px]">
             <figure className="flex h-7 w-7 items-center justify-center overflow-hidden rounded-full">
               <img src={imageJeanette} alt="Jeanette's picture" />
@@ -87,7 +87,7 @@ function App() {
           </blockquote>
         </article>
 
-        <article className="flex flex-col gap-card-200 rounded-lg bg-card-Dark-blue p-card-400 shadow-2xl md:col-span-2 md:row-start-3 xl:col-span-2 xl:col-start-2 xl:row-start-2">
+        <article className="z-10 flex flex-col gap-card-200 rounded-lg bg-card-Dark-blue p-card-400 shadow-card md:col-span-2 md:row-start-3 xl:col-span-2 xl:col-start-2 xl:row-start-2">
           <header className="flex flex-row items-center gap-[17px]">
             <figure className="flex h-7 w-7 items-center justify-center overflow-hidden rounded-full border-2 border-card-Purple-500">
               <img src={imagePatrick} alt="Patrick's picture" />
@@ -112,7 +112,7 @@ function App() {
           </blockquote>
         </article>
 
-        <article className="flex flex-col gap-card-200 rounded-lg bg-card-White p-card-400 shadow-2xl md:col-span-2 md:row-start-4 xl:col-span-1 xl:col-start-4 xl:row-span-2 xl:row-start-1">
+        <article className="z-10 flex flex-col gap-card-200 rounded-lg bg-card-White p-card-400 shadow-card md:col-span-2 md:row-start-4 xl:col-span-1 xl:col-start-4 xl:row-span-2 xl:row-start-1">
           <header className="flex flex-row items-center gap-[17px]">
             <figure className="flex h-7 w-7 items-center justify-center overflow-hidden rounded-full">
               <img src={imageKira} alt="Kira's picture" />
