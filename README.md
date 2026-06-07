@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-<img width="1920" height="1440" alt="testimonials-grid-section-shots" src="https://github.com/user-attachments/assets/85c31330-57a9-4e16-b74c-4cce52e60298" />
+<img width="1920" height="1440" alt="testimonials grid section shots" src="https://github.com/user-attachments/assets/1003fec4-2dab-469a-98f0-410f8c3f5189" />
 
 ### Links
 
