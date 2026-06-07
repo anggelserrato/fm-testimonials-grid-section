@@ -5,17 +5,17 @@ import imageKira from '../assets/image-kira.jpg';
 import imagePatrick from '../assets/image-patrick.jpg';
 import bgPatternQuotation from '../assets/bg-pattern-quotation.svg';
 
-function TestimonialsSection() {
+function App() {
   return (
     <main>
-      <section className="mx-auto my-[70px] flex max-w-[311px] flex-col items-center justify-center gap-card-400 md:grid md:max-w-[647px] md:grid-cols-2 md:items-stretch xl:my-card-2800 xl:max-w-[1114px] xl:grid-cols-4 xl:gap-x-card-400 xl:gap-y-card-300">
-        <article className="relative flex flex-col gap-card-200 rounded-lg bg-card-Purple-500 p-card-400 shadow-card md:col-span-2 md:col-start-1 md:row-start-1">
+      <section className="grid grid-cols-1 gap-card-400 px-card-200 py-card-400 md:grid-cols-2 md:grid-rows-[auto_auto_auto_auto] md:gap-y-card-400 md:px-card-600 md:py-card-1600 xl:grid-cols-4 xl:grid-rows-[auto_auto] xl:gap-x-card-400 xl:gap-y-card-300 xl:px-40 xl:py-card-2800">
+        <article className="flex flex-col gap-card-200 rounded-lg bg-card-Purple-500 p-card-400 shadow-2xl md:col-span-2 xl:col-span-2 xl:col-start-1 xl:row-start-1">
           <img
             src={bgPatternQuotation}
             alt="Background quotation mark pattern"
             className="absolute top-0 left-[375px] z-0 hidden md:block"
           />
-          <header className="relative z-1 flex flex-row items-center gap-[17px]">
+          <header className="flex flex-row items-center gap-[17px]">
             <figure className="flex h-7 w-7 items-center justify-center overflow-hidden rounded-full border-2 border-card-Purple-300">
               <img src={imageDaniel} alt="Daniel's picture" />
             </figure>
@@ -26,12 +26,12 @@ function TestimonialsSection() {
               </p>
             </div>
           </header>
-          <p className="relative z-1 text-preset-1 text-card-White">
+          <p className="text-preset-1 text-card-White">
             I received a job offer mid-course, and the subjects I learned were
             current, if not more so, in the company I joined. I honestly feel I
             got every penny’s worth.
           </p>
-          <blockquote className="relative z-1 text-preset-3 text-card-Purple-50">
+          <blockquote className="text-preset-3 text-card-Purple-50">
             “ I was an EMT for many years before I joined the bootcamp. I’ve
             been looking to make a transition and have heard some people who had
             an amazing experience here. I signed up for the free intro course
@@ -42,7 +42,7 @@ function TestimonialsSection() {
           </blockquote>
         </article>
 
-        <article className="flex flex-col gap-card-200 rounded-lg bg-card-Grey-500 p-card-400 shadow-card md:col-start-1 md:row-start-2 xl:col-start-3 xl:row-start-1">
+        <article className="flex flex-col gap-card-200 rounded-lg bg-card-Grey-500 p-card-400 shadow-2xl md:row-start-2 xl:col-start-3 xl:row-start-1">
           <header className="flex flex-row items-center gap-[17px]">
             <figure className="flex h-7 w-7 items-center justify-center overflow-hidden rounded-full">
               <img src={imageJonathan} alt="Jonathan's picture" />
@@ -64,7 +64,7 @@ function TestimonialsSection() {
           </blockquote>
         </article>
 
-        <article className="z-1 flex flex-col gap-card-200 rounded-lg bg-card-White p-card-400 shadow-card md:col-start-2 md:row-start-2 xl:col-start-1 xl:row-start-2">
+        <article className="flex flex-col gap-card-200 rounded-lg bg-card-White p-card-400 shadow-2xl xl:col-start-1 xl:row-start-2">
           <header className="flex flex-row items-center gap-[17px]">
             <figure className="flex h-7 w-7 items-center justify-center overflow-hidden rounded-full">
               <img src={imageJeanette} alt="Jeanette's picture" />
@@ -87,7 +87,7 @@ function TestimonialsSection() {
           </blockquote>
         </article>
 
-        <article className="flex flex-col gap-card-200 rounded-lg bg-card-Dark-blue p-card-400 shadow-card md:col-span-2 md:col-start-1 md:row-start-3 xl:col-span-2 xl:col-start-2 xl:row-start-2">
+        <article className="flex flex-col gap-card-200 rounded-lg bg-card-Dark-blue p-card-400 shadow-2xl md:col-span-2 md:row-start-3 xl:col-span-2 xl:col-start-2 xl:row-start-2">
           <header className="flex flex-row items-center gap-[17px]">
             <figure className="flex h-7 w-7 items-center justify-center overflow-hidden rounded-full border-2 border-card-Purple-500">
               <img src={imagePatrick} alt="Patrick's picture" />
@@ -112,7 +112,7 @@ function TestimonialsSection() {
           </blockquote>
         </article>
 
-        <article className="flex flex-col gap-card-200 rounded-lg bg-card-White p-card-400 shadow-card md:col-span-2 md:col-start-1 md:row-start-4 xl:col-start-4 xl:row-span-2 xl:row-start-1">
+        <article className="flex flex-col gap-card-200 rounded-lg bg-card-White p-card-400 shadow-2xl md:col-span-2 md:row-start-4 xl:col-span-1 xl:col-start-4 xl:row-span-2 xl:row-start-1">
           <header className="flex flex-row items-center gap-[17px]">
             <figure className="flex h-7 w-7 items-center justify-center overflow-hidden rounded-full">
               <img src={imageKira} alt="Kira's picture" />
@@ -127,7 +127,7 @@ function TestimonialsSection() {
           <p className="text-preset-1 text-card-Grey-500">
             Such a life-changing experience. Highly recommended!
           </p>
-          <blockquote className="text-preset-3 text-card-Grey-400">
+          <blockquote className="overflow-hidden text-preset-3 text-card-Grey-400">
             “ Before joining the bootcamp, I’ve never written a line of code. I
             needed some structure from professionals who can help me learn
             programming step by step. I was encouraged to enroll by a former
@@ -147,4 +147,4 @@ function TestimonialsSection() {
   );
 }
 
-export default TestimonialsSection;
+export default App;
