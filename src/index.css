@@ -1,5 +1,21 @@
 @import 'tailwindcss';
 
+@font-face {
+  font-display: swap;
+  font-family: 'Barlow Semi Condensed';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/barlow-semi-condensed-v16-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Barlow Semi Condensed';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./fonts/barlow-semi-condensed-v16-latin-600.woff2') format('woff2');
+}
+
 @theme {
   --color-card-Purple-50: hsl(260, 100%, 95%);
   --color-card-Purple-500: hsl(263, 55%, 52%);
@@ -12,50 +28,50 @@
   --color-card-Grey-500: hsl(217, 19%, 35%);
   --color-card-Dark-blue: hsl(219, 29%, 14%);
   --color-card-Black: hsl(0, 0%, 7%);
-  --font-Barlow-Semi-Condensed:
-    'Barlow Semi Condensed', ui-sans-serif, system-ui, sans-serif;
-  --spacing-card-50: 4px;
-  --spacing-card-100: 8px;
-  --spacing-card-200: 16px;
-  --spacing-card-300: 24px;
-  --spacing-card-400: 32px;
-  --spacing-card-500: 40px;
-  --spacing-card-2800: 224px;
+  --font-sans:
+    'Barlow Semi Condensed', ui-sans-serif, system-ui, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --spacing-card-50: 0.25rem; /* 4px */
+  --spacing-card-100: 0.5rem; /* 8px */
+  --spacing-card-200: 1rem; /* 16px */
+  --spacing-card-300: 1.5rem; /* 24px */
+  --spacing-card-400: 2rem; /* 32px */
+  --spacing-card-500: 2.5rem; /* 40px */
+  --spacing-card-2800: 14rem; /* 224px */
   --shadow-card: 40px 60px 50px 0px rgba(72, 85, 106, 0.25);
 }
 
 @layer base {
   body {
-    font-family: var(--font-Barlow-Semi-Condensed);
     background-color: var(--color-card-white-smoke);
   }
 }
 
 @utility text-preset-1 {
   font-weight: 600;
-  font-size: 20px;
-  line-height: 120%;
-  letter-spacing: 0px;
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.2;
+  letter-spacing: 0;
   align-self: stretch;
 }
 
 @utility text-preset-2 {
   font-weight: 500;
-  font-size: 13px;
-  line-height: 110%;
-  letter-spacing: 0px;
+  font-size: 0.8125rem; /* 13px */
+  line-height: 1.1;
+  letter-spacing: 0;
 }
 
 @utility text-preset-3 {
   font-weight: 500;
-  font-size: 13px;
-  line-height: 140%;
-  letter-spacing: 0px;
+  font-size: 0.8125rem; /* 13px */
+  line-height: 1.4;
+  letter-spacing: 0;
 }
 
 @utility text-preset-4 {
   font-weight: 500;
-  font-size: 11px;
-  line-height: 110%;
-  letter-spacing: 0px;
+  font-size: 0.6875rem; /* 11px */
+  line-height: 1.1;
+  letter-spacing: 0;
 }
